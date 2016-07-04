@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="action_settings">Sort</string>
+    <string name="KEY">api_key=c1e4c4e5e7beb0622f2761b546bfae3b</string>
+    <string name="baseURL">http://api.themoviedb.org/3/discover/movie?</string>
+    <string name="action_share">Share</string>
+    <string name="movieQueryBaseUrl">http://api.themoviedb.org/3/movie/</string>
+    <array name="options">
+        <item>Most popular</item>
+        <item>Highest rated</item>
+        <item>Favourites</item>
+    </array>
+
+    <string name="TAG_JSON">JSON_OBJECT_REQUEST</string>
+    <string name="POPULARITY">popularity.desc</string>
+    <string name="RATING">vote_average.desc&amp;vote_count.gte=100</string>
+</resources>

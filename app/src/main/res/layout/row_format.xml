@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="304dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="8dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/text"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll"
+            android:gravity="center"
+            android:lines="2"
+            android:paddingTop="2dp"
+            android:text="Title"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/popularity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:drawableLeft="@drawable/ic_whatshot_black_12dp"
+                android:drawablePadding="4dp"
+                android:drawableStart="@drawable/ic_whatshot_black_12dp"
+                android:gravity="start|center"
+                android:maxLines="1"
+                android:text="100%"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:drawableEnd="@drawable/ic_star_rate_black_18dp"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/ic_star_rate_black_18dp"
+                android:gravity="end|center"
+                android:maxLines="1"
+                android:text="5.0"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
